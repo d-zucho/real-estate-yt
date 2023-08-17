@@ -54,6 +54,7 @@
   border: transparent;
   background-color: transparent;
   width: 400px;
+  padding-left: 0.5rem;
   font-size: 1.2rem;
   font-family: 'Raleway', sans-serif;
 }
@@ -67,10 +68,39 @@
   align-items: center;
 }
 
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
 .search button {
   background: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+  border: 1px solid #5651e5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .search input[type='radio'] {
   margin: 0 0.5rem;
+}
+
+.search .icon {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 940px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .search input[type='text'] {
+    width: 100%;
+  }
 }

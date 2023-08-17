@@ -18,14 +18,16 @@ function Hero() {
             placeholder='Enter Keyword...'
           />
           <div className='radio'>
-            <input type='radio' name='buy-rent' id='buy' />
-            <label htmlFor='buy'>Buy</label>
-            <input type='radio' name='buy-rent' id='rent' />
-            <label htmlFor='rent'>Rent</label>
-            <button className='btn' type='submit'>
-              <AiOutlineSearch className='icon /' />
-            </button>
+            <div className='radio-group'>
+              <input type='radio' name='buy-rent' id='buy' />
+              <label htmlFor='buy'>Buy</label>
+              <input type='radio' name='buy-rent' id='rent' />
+              <label htmlFor='rent'>Rent</label>
+            </div>
           </div>
+          <button type='submit'>
+            <AiOutlineSearch className='icon /' />
+          </button>
         </form>
       </div>
     </div>

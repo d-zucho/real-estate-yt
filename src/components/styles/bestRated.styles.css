@@ -1,0 +1,38 @@
+.bestRated {
+  width: 100%;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.bestRated > div {
+  display: flex;
+  justify-content: center;
+}
+
+.bestRated > div p {
+  margin: 1rem 2rem;
+  font-weight: 700;
+}
+
+.bestRated .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+  padding: 1rem;
+}
+
+.bestRated img {
+  width: 100%;
+}
+
+.bestRated p {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+  .bestRated .container {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
